@@ -1,0 +1,25 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>โปรไฟล์</title><link rel="stylesheet" href="style.css"></head><body><nav class="navbar"><div class="nav-inner"><a class="brand" href="index.html">APS SHOES</a><div class="nav-links"><a href="index.html">หน้าแรก</a><a href="products.html">รายการรองเท้า</a><a href="orders.html">รายการสั่งซื้อ</a><a href="about.html">เกี่ยวกับเรา</a><a href="contact.html">ติดต่อเรา</a><a class="profile-link" href="profile.html">โปรไฟล์</a></div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ค้นหารองเท้า..."><button class="btn btn-primary">ค้นหา</button></form><a class="nav-btn" href="cart.html">🛒 ตะกร้า (<span class="cart-count">0</span>)</a><button class="nav-btn auth-button">เข้าสู่ระบบ</button></div></nav><main class="container">
+  <h1>โปรไฟล์</h1>
+  <div class="profile">
+    <div class="profile-card">
+      <img src="img/profilePic.jpg" class="avatar">
+      <h2 id="profileName">Guest</h2>
+      <p class="muted">สมาชิกเว็บไซต์</p>
+      <p class="muted">ชื่อผู้ใช้: <span id="profileUsername">-</span></p>
+    </div>
+    <div class="panel">
+      <h2>ข้อมูลบัญชี</h2>
+      <form id="profileForm">
+        <div class="form-group">
+          <label>ชื่อที่แสดง</label>
+          <input id="profileFullName" required placeholder="ชื่อของคุณ">
+        </div>
+        <div class="form-group">
+          <label>อีเมล</label>
+          <input id="profileEmail" type="email" placeholder="email@example.com">
+        </div>
+        <button class="btn btn-primary" type="submit">บันทึกข้อมูล</button>
+      </form>
+    </div>
+  </div>
+</main><div class="modal" id="loginModal"><div class="modal-box"><button class="close" onclick="this.closest('.modal').classList.remove('show')">×</button><h2>เข้าสู่ระบบ</h2><form id="loginForm"><div class="form-group"><label>ชื่อผู้ใช้</label><input id="loginName" required></div><div class="form-group"><label>รหัสผ่าน</label><input id="loginPassword" type="password" required></div><button class="btn btn-primary">เข้าสู่ระบบ</button></form></div></div><div class="toast" id="toast"></div><script src="data.js"></script><script src="app.js?v=141"></script></body></html>
